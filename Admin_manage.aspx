@@ -8,10 +8,10 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <center> 
+    <center>
      <table align="center">
             <tr>
-                <td> <img src="ITP_logo.png" /> </td>
+                <td> <img src="ITP_logo.png" />TEST </td>
                 <td>
                     <h2 style="text-align:center"> IT for Professionals </h2>
                     <h2 style="text-align:center"> Information Technology Specialist </h2>
@@ -23,12 +23,12 @@
             <div align="center" style="line-height: 200% ; font-size: 30px ; font-family: cursive " >
                 <%
                     Response.Write("<p> ==User Management== <br/> ");
-                    Response.Write("All User ID "); 
+                    Response.Write("All User ID ");
                 %>
              </div>
-       
+
         <table>
-         
+
              <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="Admin_ID" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
                  <AlternatingRowStyle BackColor="White" />
                  <Columns>
@@ -53,13 +53,13 @@
               <asp:Button ID="Button1" runat="server" Text="EDIT" PostBackUrl="~/Admin_edit.aspx" />
               <asp:Button ID="Button2" runat="server" Text="ADD" PostBackUrl="~/Admin_add.aspx" />
               <asp:Button ID="Button3" runat="server" Text="DELETE" PostBackUrl="~/Admin_delete.aspx" />
-            
+
             </br></br>
                <asp:Button ID="Button4" runat="server" Text="VIEW" PostBackUrl="~/Admin_view.aspx" style="background-color:#FFFF00" />
 
               </table>
 
-        </center> 
+        </center>
     </form>
 </body>
 </html>
